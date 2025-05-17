@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/28d5d455c6.js" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <i class="fa-brands fa-instagram"></i><strong class="ms-2">Instagram</strong>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button type="button" class="btn btn-success ms-auto me-2 justify-content-end" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" data-bs-whatever="">Create a new post</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Caption:</label>
+                                        <textarea class="form-control" placeholder="Add the caption of your post here"
+                                            id="message-text"></textarea>
+                                    </div>
+                                </form>
+                                <button type="button" class="btn btn-light border border-dark"> <i
+                                        class="fa-solid fa-camera"></i></button>
+                                <button type="button" class="btn btn-light border border-dark"><i
+                                        class="fa-solid fa-location-dot"></i></button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-secondary  dropdown-toggle" href="#" id="navbardropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+
+
+    <!-- BOTONES -->
+    <p class="d-flex justify-content-center">
+        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#fila" aria-expanded="false">
+            <i class="fa-solid fa-table-cells"></i>
+        </button>
+
+        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#columna" aria-expanded="true">
+            <i class="fa-solid fa-square"></i>
+        </button>
+    </p>
+
+    <div class="accordion" id="contenedorImagenes">
+
+        <!-- IMÁGENES EN FILA -->
+        <div class="accordion-collapse collapse" id="fila" data-bs-parent="#contenedorImagenes">
+            <div class="card-body d-flex justify-content-center">
+                <div class="row text-center">
+                    <div class="col-md-" style="width: 20rem;">
+                        <img src="https://www.worldatlas.com/upload/f7/1d/ca/shutterstock-412724059.jpg"
+                            class="img-fluid mb-3" alt="Imagen 1">
+                    </div>
+                    <div class="col-md-4" style="width: 20rem;">
+                        <img src="https://lagavetavoladora.com/wp-content/uploads/2015/07/Nueva-York-desde-las-alturas-e1437670494374.jpg"
+                            class="img-fluid  mb-3" alt="Imagen 2">
+                    </div>
+                    <div class="col-md-4" style="width: 20rem;">
+                        <img src="https://a.cdn-hotels.com/gdcs/production156/d397/81ce7a3b-5be9-4d0c-89e2-ab7920d94bb9.jpg"
+                            class="img-fluid  mb-3" alt="Imagen 3">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body d-flex justify-content-center">
+                <div class="row text-center">
+                    <div class="col-md-" style="width: 20rem;">
+                        <img src="https://monvoyagemonagence.ca/wp-content/uploads/2022/09/VRA-Paradisus-Varadero-Aerial-002-copie.jpg"
+                            class="img-fluid mb-3" alt="Imagen 1">
+                    </div>
+                    <div class="col-md-4" style="width: 20rem;">
+                        <img src="https://newyorktoday.it/wp-content/uploads/2019/07/quartieri-new-york-manhattan-768x512.jpg"
+                            class="img-fluid  mb-3" alt="Imagen 2">
+                    </div>
+                    <div class="col-md-4" style="width: 20rem;">
+                        <img src="https://www.flyingandtravel.com/wp-content/uploads/2017/07/things-to-do-in-miami-florida.jpg"
+                            class="img-fluid  mb-3" alt="Imagen 3">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body d-flex justify-content-center">
+                <div class="row text-center">
+                    <div class="col-md-" style="width: 20rem;">
+                        <img src="https://www.thecubanhistory.com/wp-content/uploads/2020/05/havana-cuba-callejon-de-hamel-latina-travel-blogger-dsm-5.jpg"
+                            class="img-fluid mb-3" alt="Imagen 1">
+                    </div>
+                    <div class="col-md-4" style="width: 20rem;">
+                        <img src="https://cdn.shopify.com/s/files/1/0347/6111/3736/products/Times-Square-Daytime.jpg?v=1586177621"
+                            class="img-fluid  mb-3" alt="Imagen 2">
+                    </div>
+                    <div class="col-md-4" style="width: 20rem;">
+                        <img src="https://th.bing.com/th/id/R.e02ec45d32389b4b1354bff2626f5ae1?rik=Gd2Yjz6%2bsgDL0w&riu=http%3a%2f%2fwww.themiamiartscene.com%2fwp-content%2fuploads%2f2014%2f06%2fwynwood-walls.jpg&ehk=%2fUG37txJ59KSCNdCAKUvMn5GciIUUGuUEaiWyHkVTDA%3d&risl=&pid=ImgRaw&r=0"
+                            class="img-fluid  mb-3" alt="Imagen 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="accordion-collapse collapse show" id="columna" data-bs-parent="#contenedorImagenes">
+            <div class="card-body d-flex flex-column align-items-center gap-3">
+
+                <!-- Tarjeta 1 -->
+                <div class="card" style="width: 25rem;">
+                    <p class="mt-1 ms-1"><strong>La Habana</strong></p>
+                    <img src="https://www.worldatlas.com/upload/f7/1d/ca/shutterstock-412724059.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <p class="d-flex ms-1"><strong>90k Likes</strong></p>
+                        <p class="card-text">La Habana es la capital de Cuba, famosa por su arquitectura colonial, autos
+                            clásicos, música vibrante y su emblemático malecón.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="card" style="width: 25rem;">
+                    <p class="mt-1 ms-1"><strong>New York</strong></p>
+                    <img src="https://lagavetavoladora.com/wp-content/uploads/2015/07/Nueva-York-desde-las-alturas-e1437670494374.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <p class="d-flex ms-1"><strong>105k Likes</strong></p>
+                        <p class="card-text">Nueva York es un centro cultural global, famoso por su arte, teatro en
+                            Broadway y museos como el MET y el MoMA. Su diversidad se refleja en festivales y
+                            tradiciones de todo el mundo.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="card" style="width: 25rem;">
+                    <p class="mt-1 ms-1"><strong>Miami</strong></p>
+                    <img src="https://www.holidaywolf.de/wp/wp-content/uploads/2021/07/miami-sehenswuerdigkeiten.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <p class="d-flex ms-1"><strong>10k Likes</strong></p>
+                        <p class="d-flex ms-1 card-text">Miami es una ciudad vibrante en el sur de Florida, conocida por
+                            sus playas,
+                            vida nocturna, cultura diversa y clima cálido. Es un destino popular para turistas y tiene
+                            una gran influencia en la moda, el arte y la música.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
